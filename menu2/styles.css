@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+    font-family: serif;
+}
+
+/* Default Flex */
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.align-space-between{
+    align-items: space-between;
+}
+
+.align-space-around{
+    align-items: space-around;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* /Default Flex */
+
+.h1Nav{
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 0.5vh;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    transition: 0.5s linear;
+}
+
+.h2Nav{
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: 0.2s linear;
+}
+
+.menu{
+    position: fixed;
+    height: 100%;
+    left: -20%;
+    top: 0;
+    transition: 0.5s linear;
+    background-color: white;
+    z-index: 10;
+}
+
+.nav-item{
+    margin: 2vh 0 0 2vh;
+    padding: 1vh 1vh 1vh 0;
+    cursor: pointer;
+}
+
+.Line{
+    margin: 0.5vh 0 0 2vh;
+    width: 200px;
+    height: 0.2vh;
+    background: linear-gradient(30deg, #1abc9c, #8e44ad)
+}
+
+.outside{
+    position: relative;
+    z-index: 100;
+}
+
+.inside{
+    width: 180px;
+    position: absolute;
+    left: -650%;
+    z-index: -1;
+    top: 37%;
+    transition: 0.2s linear;
+}
+
+.inside h2{
+   padding: 0 0 0 1vh;
+   background-color: white;
+}
+
+#closeMenu{
+    padding: 1vh 0 0 2vh;
+    cursor: pointer;
+}
